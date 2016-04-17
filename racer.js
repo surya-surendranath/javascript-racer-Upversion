@@ -219,6 +219,20 @@ function newUpdatePlayerPosition() {
            }
 
          } 
+
+var pNewTrackLength=function(){ 
+
+      if(level2Tack<=pnewCount || level2Tack>=pnewCount){
+
+          var j=pnewCount;
+          var player1Strip = document.querySelectorAll('#player1_strip td')
+
+          player1Strip[j].className="active";
+          player1Strip[j-1].className="";
+       
+              }
+            }
+
 var pxTrackFinish=function(){
             
       if(xnewCount>=level2Tack && xnewCount>ynewCount) {
@@ -271,18 +285,7 @@ var ptrackSpeed=function() {
 
                }
              }
-var pNewTrackLength=function(){ 
 
-      if(level2Tack<=pnewCount || level2Tack>=pnewCount){
-
-          var j=pnewCount;
-          var player1Strip = document.querySelectorAll('#player1_strip td')
-
-          player1Strip[j].className="active";
-          player1Strip[j-1].className="";
-       
-              }
-            }
 var qNewTrackLength=function(){
 
       if(level2Tack<=qnewCount || level2Tack>=qnewCount){
@@ -424,11 +427,26 @@ function newUpdatePlayerPosition() {
          qNewTrackLength()
 
          qtrackSpeed()
+         
          qyTrackFinish()
 
            }
            
          } 
+
+var qNewTrackLength=function(){
+
+      if(level2Tack<=qnewCount || level2Tack>=qnewCount){
+
+          var j=qnewCount;
+          var player2Strip = document.querySelectorAll('#player2_strip td')
+
+          player2Strip[j].className="active";
+          player2Strip[j-1].className="";
+      
+                    }
+                  }
+
 var pNewTrackLength=function(){
 
       if(level2Tack<=pnewCount || level2Tack>=pnewCount){
@@ -495,18 +513,7 @@ var qyTrackFinish=function(){
           }
 
        }   
-var qNewTrackLength=function(){
 
-      if(level2Tack<=qnewCount || level2Tack>=qnewCount){
-
-          var j=qnewCount;
-          var player2Strip = document.querySelectorAll('#player2_strip td')
-
-          player2Strip[j].className="active";
-          player2Strip[j-1].className="";
-      
-                    }
-                  }
                 }
               }
             }
