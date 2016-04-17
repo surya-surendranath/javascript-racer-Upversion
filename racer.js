@@ -183,7 +183,6 @@ function newUpdatePlayerPosition() {
         }
  
        alert("Please press x or y key to advance");
-    
       }
        if (event.which ===80) {
 
@@ -196,10 +195,10 @@ function newUpdatePlayerPosition() {
 
            player1Strip[i].className=""; 
            player1Strip[trackLength].className="active"; 
+           }
          }
-      }
-           alert("Please press x or y key to advance");
 
+           alert("Please press x or y key to advance");
           }
          //when user release 'q' key
         if (event.which ===89) {
@@ -396,7 +395,6 @@ function newUpdatePlayerPosition() {
           player2Strip[trackLength].className="active"; 
           }
         }
- 
           alert("Please press x or y key to advance");
       
           }
@@ -427,7 +425,6 @@ function newUpdatePlayerPosition() {
          qNewTrackLength()
 
          qtrackSpeed()
-
          qyTrackFinish()
 
            }
