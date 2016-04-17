@@ -32,9 +32,10 @@ var trackLen=function(){
            for ( var j = 0; j < trackLength; j++){
 
              var trackColoumn = document.createElement('td')
+
              playerStrip[i].appendChild(trackColoumn)   
 
-             document.getElementById("pChaseTrack").innerHTML="LEVEL 1";    
+             document.getElementById("pChaseTrack").innerHTML="LEVEL 1"; 
                 }
               }
             }
@@ -62,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("imgrob1").style.visibility="hidden";
   document.getElementById("imgrob2").style.visibility="hidden";
 
-
   var playerStrip = document.querySelectorAll('tr')
   var player1Strip = document.querySelectorAll('#player1_strip td')
 
@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     pTrackLength()
     pTrackFinish()
-
       }
 
    //when user release 'q' key
@@ -124,7 +123,7 @@ var pTrackFinish=function(){
            player1Strip[i].className="";  
            player2Strip[i].className="";  
    
-        }
+          }
            if(level2Tack>0 || level2Tack!==undefined)
             {
 
@@ -156,6 +155,7 @@ var xnewCount=0;
 var ynewCount=0;
 
 function newUpdatePlayerPosition() {
+
     if (event.which ===88) {
 
      pnewCount++;
@@ -166,7 +166,6 @@ function newUpdatePlayerPosition() {
      ptrackSpeed();
 
      pxTrackFinish();
-
       }
      if (event.which ===81) {
         
@@ -178,12 +177,11 @@ function newUpdatePlayerPosition() {
 
         player2Strip[i].className=""; 
         player2Strip[trackLength].className="active"; 
-
           }
         }
  
        alert("Please press x or y key to advance");
-      }
+         }
        if (event.which ===80) {
 
          for(i=0;i<=trackLength;i++)
@@ -197,7 +195,6 @@ function newUpdatePlayerPosition() {
            player1Strip[trackLength].className="active"; 
            }
          }
-
            alert("Please press x or y key to advance");
           }
          //when user release 'q' key
@@ -211,12 +208,10 @@ function newUpdatePlayerPosition() {
          ptrackSpeed()
 
          pyTrackFinish()
-
            }
 
          trackSpeed()
          } 
-         
 var pxTrackFinish=function(){
             
       if(xnewCount>=level2Tack && xnewCount>ynewCount) {
@@ -298,7 +293,6 @@ var qNewTrackLength=function(){
             }
           }
        }
-
  var qTrackLength=function(){
 
      if(qCount<=trackLength) {
@@ -311,7 +305,6 @@ var qNewTrackLength=function(){
 
            }
          }
-
 var qTrackFinish=function(){
 
       //when 'q' reaches finish point
@@ -376,18 +369,18 @@ function newUpdatePlayerPosition() {
       pnewCount++;
       xnewCount++;
 
-    pNewTrackLength()
+      pNewTrackLength()
 
-    qtrackSpeed()
+      qtrackSpeed()
 
-    qxTrackFinish()
+      qxTrackFinish()
 
       }
-     
     if (event.which ===81) {
         
      for(i=0;i<=trackLength;i++){
-     player2Strip[i].className=""; 
+
+       player2Strip[i].className=""; 
      
         if(qnewCount===trackLength){
 
@@ -398,7 +391,6 @@ function newUpdatePlayerPosition() {
           alert("Please press x or y key to advance");
       
           }
-
     if (event.which ===80) {
 
      for(i=0;i<=trackLength;i++){
@@ -415,7 +407,6 @@ function newUpdatePlayerPosition() {
          alert("Please press x or y key to advance");
 
       }
-
        //when user release 'q' key
        else if (event.which ===89) {
 
@@ -431,7 +422,6 @@ function newUpdatePlayerPosition() {
            
          trackSpeed()
          } 
-
 var pNewTrackLength=function(){
 
       if(level2Tack<=pnewCount || level2Tack>=pnewCount){
@@ -444,7 +434,6 @@ var pNewTrackLength=function(){
  
          }
        }
-
  var qtrackSpeed=function() {
 
       //when p chase faster than q 
@@ -464,8 +453,8 @@ var pNewTrackLength=function(){
          document.getElementById("imgrob2").style.visibility="visible";
          document.getElementById("imgrob1").style.visibility="hidden";
           
-               }
-             }
+              }
+            }
 var qxTrackFinish=function(){
             
       if(xnewCount>=level2Tack && xnewCount>ynewCount) {
@@ -479,9 +468,9 @@ var qxTrackFinish=function(){
          alert("GAME OVER")
 
          pageReload()
-       }
+            }
     
-     }
+          }
 var qyTrackFinish=function(){
 
       if(ynewCount>=level2Tack && ynewCount>xnewCount) {
@@ -499,8 +488,7 @@ var qyTrackFinish=function(){
 
           }
 
-       }
-       
+       }   
 var qNewTrackLength=function(){
 
       if(level2Tack<=qnewCount || level2Tack>=qnewCount){
@@ -523,8 +511,8 @@ var gunSound=document.getElementById("gunSound");
 var gunMusic=function(){
 
          gunSound.play();
-}
 
+                 }
 var pageReload=function() {
 
        //when user finish game and starts new game
