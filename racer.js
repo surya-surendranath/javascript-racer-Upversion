@@ -15,9 +15,16 @@ var startGame= function(){
          trackLen()
          newGame()
 
-         gunMusic()
+        // gunMusic()
     }
 }
+var gunSound=document.getElementById("gunSound");
+
+var gunMusic=function(){
+
+         gunSound.play();
+
+                 }
 var trackLen=function(){
 
       if(gameCount<=1) {
@@ -210,7 +217,6 @@ function newUpdatePlayerPosition() {
          pyTrackFinish()
            }
 
-         trackSpeed()
          } 
 var pxTrackFinish=function(){
             
@@ -366,6 +372,7 @@ function newUpdatePlayerPosition() {
 
    //when user release 'p' key
     if (event.which ===88) {
+
       pnewCount++;
       xnewCount++;
 
@@ -385,7 +392,7 @@ function newUpdatePlayerPosition() {
         if(qnewCount===trackLength){
 
          player2Strip[i].className=""; 
-          player2Strip[trackLength].className="active"; 
+         player2Strip[trackLength].className="active"; 
           }
         }
           alert("Please press x or y key to advance");
@@ -420,7 +427,6 @@ function newUpdatePlayerPosition() {
 
            }
            
-         trackSpeed()
          } 
 var pNewTrackLength=function(){
 
@@ -479,8 +485,7 @@ var qyTrackFinish=function(){
           document.getElementById("trackEsc").style.visibility="visible";
       
           document.getElementById("trackEsc").innerHTML="HURRAY!'JOHN' ESCAPED FROM CITY";
-          document.getElementById("trackEsc").innerHTML="TEST WALTER";
-
+          
           alert("HURRAY!'WALTER' ESCAPED FROM CITY");
           alert("GAME OVER")
 
@@ -506,13 +511,7 @@ var qNewTrackLength=function(){
             }
           }
         }
-var gunSound=document.getElementById("gunSound");
 
-var gunMusic=function(){
-
-         gunSound.play();
-
-                 }
 var pageReload=function() {
 
        //when user finish game and starts new game
