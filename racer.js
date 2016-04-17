@@ -168,7 +168,7 @@ function newUpdatePlayerPosition() {
      pnewCount++;
      xnewCount++;
 
-     pNewTrackLength();
+     //pNewTrackLength();
 
     // ptrackSpeed();
 
@@ -212,7 +212,7 @@ function newUpdatePlayerPosition() {
          ynewCount++;
          qnewCount++;
 
-         qNewTrackLength()
+        // qNewTrackLength()
 
          //ptrackSpeed()
 
@@ -378,7 +378,7 @@ function newUpdatePlayerPosition() {
       pnewCount++;
       xnewCount++;
 
-      pNewTrackLength()
+      //pNewTrackLength()
 
       //qtrackSpeed()
 
@@ -422,7 +422,7 @@ function newUpdatePlayerPosition() {
          ynewCount++;
          qnewCount++;
 
-         qNewTrackLength()
+        // qNewTrackLength()
 
          //qtrackSpeed()
 
