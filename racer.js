@@ -168,11 +168,11 @@ function newUpdatePlayerPosition() {
      pnewCount++;
      xnewCount++;
 
-     //pNewTrackLength();
+     pNewTrackLength();
 
-    // ptrackSpeed();
+     ptrackSpeed();
 
-     //pxTrackFinish();
+     pxTrackFinish();
 
       }
      if (event.which ===81) {
@@ -203,7 +203,6 @@ function newUpdatePlayerPosition() {
            player1Strip[trackLength].className="active"; 
            }
           }
-
            alert("Please press x or y key to advance");
           }
          //when user release 'q' key
@@ -212,11 +211,11 @@ function newUpdatePlayerPosition() {
          ynewCount++;
          qnewCount++;
 
-        // qNewTrackLength()
+         qNewTrackLength()
 
-         //ptrackSpeed()
+         ptrackSpeed()
 
-         //pyTrackFinish()
+         pyTrackFinish()
            }
 
          } 
@@ -378,11 +377,11 @@ function newUpdatePlayerPosition() {
       pnewCount++;
       xnewCount++;
 
-      //pNewTrackLength()
+      pNewTrackLength()
 
-      //qtrackSpeed()
+      qtrackSpeed()
 
-      //qxTrackFinish()
+      qxTrackFinish()
 
       }
     if (event.which ===81) {
@@ -422,11 +421,10 @@ function newUpdatePlayerPosition() {
          ynewCount++;
          qnewCount++;
 
-        // qNewTrackLength()
+         qNewTrackLength()
 
-         //qtrackSpeed()
-
-         //qyTrackFinish()
+         qtrackSpeed()
+         qyTrackFinish()
 
            }
            
