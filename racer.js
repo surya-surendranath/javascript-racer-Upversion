@@ -18,13 +18,7 @@ var startGame= function(){
         // gunMusic()
     }
 }
-var gunSound=document.getElementById("gunSound");
 
-var gunMusic=function(){
-
-         gunSound.play();
-
-                 }
 var trackLen=function(){
 
       if(gameCount<=1) {
@@ -168,14 +162,14 @@ function newUpdatePlayerPosition() {
      pnewCount++;
      xnewCount++;
 
-     pNewTrackLength();
+     pNewTrackLength()
 
-     ptrackSpeed();
+     ptrackSpeed()
 
-     pxTrackFinish();
+     pxTrackFinish()
 
       }
-     if (event.which ===81) {
+    else if (event.which ===81) {
         
       for(i=0;i<=trackLength;i++){
 
@@ -190,7 +184,7 @@ function newUpdatePlayerPosition() {
  
        alert("Please press x or y key to advance");
          }
-       if (event.which ===80) {
+      else if (event.which ===80) {
 
          for(i=0;i<=trackLength;i++)
 
@@ -206,7 +200,7 @@ function newUpdatePlayerPosition() {
            alert("Please press x or y key to advance");
           }
          //when user release 'q' key
-        if (event.which ===89) {
+        else if (event.which ===89) {
 
          ynewCount++;
          qnewCount++;
@@ -387,7 +381,7 @@ function newUpdatePlayerPosition() {
       qxTrackFinish()
 
       }
-    if (event.which ===81) {
+    else if (event.which ===81) {
         
      for(i=0;i<=trackLength;i++){
 
@@ -402,7 +396,7 @@ function newUpdatePlayerPosition() {
           alert("Please press x or y key to advance");
       
           }
-    if (event.which ===80) {
+    else if (event.which ===80) {
 
      for(i=0;i<=trackLength;i++){
 
